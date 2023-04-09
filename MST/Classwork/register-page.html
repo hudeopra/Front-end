@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Register Page</title>
+        <meta name="description" content="Login Page of Company Name">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            body{
+                background-color: #6decff;
+                font-family: 'Josefin Sans', sans-serif;
+                font-size: 18px;
+                text-align: center;
+            }
+            h1{
+                margin-bottom: 20px;
+            }
+            .ph-logo img{
+                max-width: 200px;
+                height: auto;
+                object-fit: contain;
+                margin-bottom: 30px;
+            }
+            .ph-login{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .ph-login__img {
+                max-width: 40%;
+            }
+            .ph-login__form {
+                max-width: 60%;
+            }
+            .ph-login__img img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                min-height: 100vh;
+            }
+            .ph-login__form{
+                display: flex;
+                min-height: 100vh;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+            }
+            form{
+                width: 500px;
+                margin: auto;
+            }
+            .ph-input-wrapper input{
+                    width: -webkit-fill-available;
+                    outline: none;
+                    max-height: 45px;
+                    padding: 8px 12px;
+                    border: 2px solid #fff;
+                    transition: all .5s;
+            }
+            input[type=password]:focus,input[type= email]:focus,input[type=password]:active,input[type= email]:active{
+                border-bottom-color: #00011f;
+            }
+            input[type=submit]{
+                background-color: #00011f;
+                color: #fff;
+                transition: all .5s;
+                border-color: #00011f;
+            }
+            input[type=submit]:hover{
+                background-color: #007c8f;
+                border-color: #007c8f;
+            }
+            .ph-input-wrapper:not(:last-of-type){
+                margin-bottom: 20px;
+            }
+            .ph-login__form--content{
+                max-width: 500px;
+                margin: 0 auto 50px;
+            }
+            footer{
+                padding: 15px;
+                background-color: #00011f;
+                color: #aaa;
+            }
+            input{
+                width: 100%;
+            }
+            .ph-half{
+                display: grid;
+                gap: 30px;
+                grid-template-columns: 1fr 1fr;
+            }
+            label{
+                display: block;
+                margin-bottom: 5px;
+            }
+            input  ~ label{
+                display: inline;
+            }
+            .input-wrapper{
+                padding: 10px 0;
+            }
+            .ph-input-list{
+                text-align: left;
+                margin-bottom: 30px;
+                align-items: baseline;
+            }
+            .ph-input-list p{
+                margin-bottom: 15px;
+                font-weight: 700;
+            }
+            .ph-input-list input{
+                width: 20px;
+            }
+            .ph-input-list label{
+                margin-bottom: 10px;
+            }
+            @media screen and (max-width:1024px){
+                .ph-login__img{
+                    display: none;
+                }
+                .ph-login__form {
+                    max-width: 100%;
+                }
+            }
+            @media screen and (max-width:550px){
+                .ph-half{
+                    display: grid;
+                    gap: 30px;
+                    grid-template-columns: 1fr ;
+                }.ph-input-wrapper {
+                    margin-bottom: 20px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <main class="ph-login-page">
+            <section class="ph-login">
+                <div class="ph-login__img">
+                    <img src="https://e0.pxfuel.com/wallpapers/849/238/desktop-wallpaper-royal-blue-abstract-background-system-personalized-royal.jpg" alt="">
+                </div>
+                <div class="ph-login__form">
+                    <div class="mt-login__form--wrapper">
+                        <div class="ph-login__form--content">
+                            <header>
+                                <div class="ph-logo">
+                                    <img src="img/dummy-logo.png" alt="">
+                                </div>
+                                <h1>Lorem ipsum dolor sit amet</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum a dolores odit, consequatur quisquam debitis.</p>
+                            </header>
+                        </div>
+                        <form action="register-page.html">
+                            <div class="ph-half">
+                                <div class="ph-input-wrapper">
+                                    <input type="text" placeholder="First Name" required>
+                                </div>
+                                <div class="ph-input-wrapper">
+                                    <input type="text" placeholder="Last Name" required>
+                                </div>
+                            </div>
+                            <div class="ph-half">
+                                <div class="ph-input-wrapper">
+                                    <input type="email" placeholder="Email Address" required>
+                                </div>
+                                <div class="ph-input-wrapper">
+                                    <input type="text" placeholder="Phone Number" required>
+                                </div>
+                            </div>
+                            <div class="ph-input-wrapper">
+                                <input type="text" placeholder="Student ID" required>
+                            </div>
+                            <div class="ph-half ph-input-list">
+                                <div class="input-wrapper">
+                                    <p>Select Your Year:
+                                    </p>
+                                    <input type="radio" id="year-4" name="level" value="year-4">
+                                    <label for="male">Year 4</label><br>
+                                    <input type="radio" id="year-5" name="level" value="year-5">
+                                    <label for="female">Year 5</label><br>
+                                    <input type="radio" id="year-6" name="level" value="year-6">
+                                    <label for="others">Year 6</label>
+                                </div>
+                                <div class="ph-input-wrapper">
+                                    <p>Prefered Mode?</p>
+                                    <input type="checkbox" id="mode1" name="mode1" value="Bike">
+                                    <label for="mode1"> Bike</label><br>
+                                    <input type="checkbox" id="mode2" name="mode2" value="Car">
+                                    <label for="mode2"> Car</label><br>
+                                    <input type="checkbox" id="mode3" name="mode3" value="Local Transport">
+                                    <label for="mode3"> Local Transport</label><br>
+                                    <input type="checkbox" id="mode4" name="mode4" value="Walking">
+                                    <label for="mode4"> Walking</label>
+                                </div>
+                            </div>
+                            <div class="ph-input-wrapper">
+                                <input type="submit" value="Login">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>
+                Copyright © 2023. All Rights Reserved By Company Name. 
+            </p>
+        </footer>
+    </body>
+</html>

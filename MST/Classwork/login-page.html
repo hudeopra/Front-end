@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Login Page</title>
+        <meta name="description" content="Login Page of Company Name">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            body{
+                background-color: #6decff;
+                font-family: 'Josefin Sans', sans-serif;
+                font-size: 18px;
+                text-align: center;
+            }
+            h1{
+                margin-bottom: 20px;
+            }
+            .ph-logo img{
+                max-width: 200px;
+                height: auto;
+                object-fit: contain;
+                margin-bottom: 30px;
+            }
+            .ph-login{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .ph-login__img {
+                max-width: 40%;
+            }
+            .ph-login__form {
+                max-width: 60%;
+            }
+            .ph-login__img img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                min-height: 100vh;
+            }
+            .ph-login__form{
+                display: flex;
+                min-height: 100vh;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+            }
+            form{
+                width: 500px;
+                margin: auto;
+            }
+            .ph-input-wrapper input{
+                    width: -webkit-fill-available;
+                    outline: none;
+                    max-height: 45px;
+                    padding: 8px 12px;
+                    border: 2px solid #fff;
+                    transition: all .5s;
+            }
+            input[type=password]:focus,input[type= email]:focus,input[type=password]:active,input[type= email]:active{
+                border-bottom-color: #00011f;
+            }
+            input[type=submit]{
+                background-color: #00011f;
+                color: #fff;
+                transition: all .5s;
+                border-color: #00011f;
+            }
+            input[type=submit]:hover{
+                background-color: #007c8f;
+                border-color: #007c8f;
+            }
+            .ph-input-wrapper:not(:last-of-type){
+                margin-bottom: 20px;
+            }
+            .ph-login__form--content{
+                max-width: 500px;
+                margin: 0 auto 50px;
+            }
+            footer{
+                padding: 15px;
+                background-color: #00011f;
+                color: #aaa;
+            }
+            @media screen and (max-width:1024px){
+                .ph-login__img{
+                    display: none;
+                }
+                .ph-login__form {
+                    max-width: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <main class="ph-login-page">
+            <section class="ph-login">
+                <div class="ph-login__img">
+                    <img src="https://e0.pxfuel.com/wallpapers/849/238/desktop-wallpaper-royal-blue-abstract-background-system-personalized-royal.jpg" alt="">
+                </div>
+                <div class="ph-login__form">
+                    <div class="mt-login__form--wrapper">
+                        <div class="ph-login__form--content">
+                            <header>
+                                <div class="ph-logo">
+                                    <img src="img/dummy-logo.png" alt="">
+                                </div>
+                                <h1>Lorem ipsum dolor sit amet</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum a dolores odit, consequatur quisquam debitis.</p>
+                            </header>
+                        </div>
+                        <form action="register-page.html">
+                            <div class="ph-input-wrapper">
+                                <input type="email" placeholder="Email Address" required>
+                            </div>
+                            <div class="ph-input-wrapper">
+                                <input type="password" placeholder="Password" required>
+                            </div>
+                            <div class="ph-input-wrapper">
+                                <input type="submit" value="Login">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>
+                Copyright © 2023. All Rights Reserved By Company Name. 
+            </p>
+        </footer>
+    </body>
+</html>

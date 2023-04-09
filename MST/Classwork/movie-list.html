@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>IMDb Rating</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="font-awesome/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <style>
+            .fa{
+                color: rgb(0, 255, 47);
+                font: normal normal normal 14px/1 FontAwesome;
+            }
+            body{
+                margin: 0;
+                font-family: 'Josefin Sans', sans-serif;
+                font-size: 18px;
+                background-color: #333;
+                color: #fff;
+                line-height: 1.5;
+            }
+            table{
+                max-width: 1200px;
+                margin: 0px auto 100px;
+            }
+            thead{
+                position: sticky;
+                background-color: #333;
+                top: 0;
+            }
+            th{
+                font-size: 20px;
+            }
+            td{
+                
+    vertical-align: top;
+            }
+            h1{
+                text-align: center;
+                margin-top: 50px;
+            }
+            h2{
+                margin-top: 0;
+            }
+            img{
+                height: 100%;
+                width: 100%;
+                max-width: 250px;
+                object-fit: cover;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1> My Movie List</h1>
+        </header>
+        <main>
+            <section>
+                
+            <table border="1px" cellpadding="15px" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>
+                            Movie Name & Cover
+                        </th>
+                        <th width="300px">
+                            Discription 
+                        </th>
+                        <th width="100px">
+                            Director
+                        </th>
+                        <th>
+                            Actors & Actress
+                        </th>
+                        <th width="100px">
+                            Rating
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="https://m.media-amazon.com/images/M/MV5BYzA3ZjQ4YTItNjRhYS00YzRkLTg4NTEtMTYyOGZjNDFmYWM5XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg" sizes="100vw" srcset="https://m.media-amazon.com/images/M/MV5BYzA3ZjQ4YTItNjRhYS00YzRkLTg4NTEtMTYyOGZjNDFmYWM5XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UY473_.jpg 319w, https://m.media-amazon.com/images/M/MV5BYzA3ZjQ4YTItNjRhYS00YzRkLTg4NTEtMTYyOGZjNDFmYWM5XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UY710_.jpg 479w, https://m.media-amazon.com/images/M/MV5BYzA3ZjQ4YTItNjRhYS00YzRkLTg4NTEtMTYyOGZjNDFmYWM5XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UY337_.jpg 227w, https://m.media-amazon.com/images/M/MV5BYzA3ZjQ4YTItNjRhYS00YzRkLTg4NTEtMTYyOGZjNDFmYWM5XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UY576_.jpg 388w, https://m.media-amazon.com/images/M/MV5BYzA3ZjQ4YTItNjRhYS00YzRkLTg4NTEtMTYyOGZjNDFmYWM5XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UY720_.jpg 486w, https://m.media-amazon.com/images/M/MV5BYzA3ZjQ4YTItNjRhYS00YzRkLTg4NTEtMTYyOGZjNDFmYWM5XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UY2500_.jpg 1688w" data-image-id="rm3118344449-curr" alt="Rosario Dawson in Ahsoka (2023)" class="sc-7c0a9e7c-0 fEIEer">
+                        </td>
+                        <td>
+                            <h2>Ahsoka</h2>
+                            After the fall of the Galactic Empire, former Jedi Knight Ahsoka Tano investigates an emerging threat to a vulnerable galaxy.
+                        </td>
+                        <td>
+                            Dave Filoni
+                        </td>
+                        <td>
+                            Rosario Dawson, Hayden Christensen, Mary Elizabeth Winstead, Ray Stevenson
+                        </td>
+                        <td>
+                            <div class="mt-rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img alt="Harrison Ford in Indiana Jones and the Dial of Destiny (2023)" class="ipc-image" loading="eager" src="https://m.media-amazon.com/images/M/MV5BYzM4MjQ0MzktNTMwNi00MDdjLTg3YTctY2M4OWRjNzA2N2E1XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_QL75_UX190_CR0,5,190,281_.jpg" srcset="https://m.media-amazon.com/images/M/MV5BYzM4MjQ0MzktNTMwNi00MDdjLTg3YTctY2M4OWRjNzA2N2E1XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_QL75_UX190_CR0,5,190,281_.jpg 190w, https://m.media-amazon.com/images/M/MV5BYzM4MjQ0MzktNTMwNi00MDdjLTg3YTctY2M4OWRjNzA2N2E1XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_QL75_UX285_CR0,8,285,422_.jpg 285w, https://m.media-amazon.com/images/M/MV5BYzM4MjQ0MzktNTMwNi00MDdjLTg3YTctY2M4OWRjNzA2N2E1XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_QL75_UX380_CR0,11,380,562_.jpg 380w" sizes="50vw, (min-width: 480px) 34vw, (min-width: 600px) 26vw, (min-width: 1024px) 16vw, (min-width: 1280px) 16vw" width="190">
+                        </td>
+                        <td>
+                            <h2>Indiana Jones and the Dial of Destiny
+                            </h2>
+                            Experience the return of legendary hero, Indiana Jones, in the fifth installment of this beloved swashbuckling series of films. Finding himself in a new era, approaching retirement, Indy wrestles with fitting into a world that seems to have outgrown him. But as the tentacles of an all-too-familiar evil return in the form of an old rival, Indy must don his hat and pick up his whip once more to make sure an ancient and powerful artifact doesn't fall into the wrong hands.
+                        </td>
+                        <td>
+                            James Mangold
+                        </td>
+                        <td>
+                            Harrison Ford, Boyd Holbrook, Mads Mikkelsen, Antonio Banderas
+                        </td>
+                        <td>
+                            <div class="mt-rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img alt="Ryan Gosling and Margot Robbie in Barbie (2023)" class="ipc-image" loading="eager" src="https://m.media-amazon.com/images/M/MV5BOWIwZGY0OTYtZjUzYy00NzRmLTg5YzgtYWMzNWQ0MmZiY2MwXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_QL75_UX190_CR0,0,190,281_.jpg" srcset="https://m.media-amazon.com/images/M/MV5BOWIwZGY0OTYtZjUzYy00NzRmLTg5YzgtYWMzNWQ0MmZiY2MwXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_QL75_UX190_CR0,0,190,281_.jpg 190w, https://m.media-amazon.com/images/M/MV5BOWIwZGY0OTYtZjUzYy00NzRmLTg5YzgtYWMzNWQ0MmZiY2MwXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_QL75_UX285_CR0,0,285,422_.jpg 285w, https://m.media-amazon.com/images/M/MV5BOWIwZGY0OTYtZjUzYy00NzRmLTg5YzgtYWMzNWQ0MmZiY2MwXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_QL75_UX380_CR0,0,380,562_.jpg 380w" sizes="50vw, (min-width: 480px) 34vw, (min-width: 600px) 26vw, (min-width: 1024px) 16vw, (min-width: 1280px) 16vw" width="190">
+                        </td>
+                        <td>
+                            <h2>Barbie</h2>
+                            To live in Barbie Land is to be a perfect being in a perfect place. Unless you have a full-on existential crisis. Or you're a Ken.
+                        </td>
+                        <td>
+                            Greta Gerwig
+                        </td>
+                        <td>
+                            Margot Robbie, Ryan Gosling, Ariana Greenblatt, 	Helen Mirren
+                        </td>
+                        <td>
+                            <div class="mt-rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img alt="Oscar Isaac, Daniel Kaluuya, Hailee Steinfeld, Shameik Moore, and Issa Rae in Spider-Man: Across the Spider-Verse (2023)" class="ipc-image" loading="eager" src="https://m.media-amazon.com/images/M/MV5BNjk5YTU0OTAtMTM1NC00Zjc1LWEzZjAtOWJkYzcxOGRhNWNhXkEyXkFqcGdeQXVyMzQ0MzA0NTM@._V1_QL75_UY281_CR3,0,190,281_.jpg" srcset="https://m.media-amazon.com/images/M/MV5BNjk5YTU0OTAtMTM1NC00Zjc1LWEzZjAtOWJkYzcxOGRhNWNhXkEyXkFqcGdeQXVyMzQ0MzA0NTM@._V1_QL75_UY281_CR3,0,190,281_.jpg 190w, https://m.media-amazon.com/images/M/MV5BNjk5YTU0OTAtMTM1NC00Zjc1LWEzZjAtOWJkYzcxOGRhNWNhXkEyXkFqcGdeQXVyMzQ0MzA0NTM@._V1_QL75_UY422_CR4,0,285,422_.jpg 285w, https://m.media-amazon.com/images/M/MV5BNjk5YTU0OTAtMTM1NC00Zjc1LWEzZjAtOWJkYzcxOGRhNWNhXkEyXkFqcGdeQXVyMzQ0MzA0NTM@._V1_QL75_UY562_CR6,0,380,562_.jpg 380w" sizes="50vw, (min-width: 480px) 34vw, (min-width: 600px) 26vw, (min-width: 1024px) 16vw, (min-width: 1280px) 16vw" width="190">
+                        </td>
+                        <td>
+                            <h2>Spider-Man: Across the Spider-Verse
+                            </h2>
+                            Miles Morales catapults across the Multiverse, where he encounters a team of Spider-People charged with protecting its very existence. When the heroes clash on how to handle a new threat, Miles must redefine what it means to be a hero.
+                        </td>
+                        <td>                            
+                            Joaquim Dos Santos, Kemp Powers, Justin K. Thompson
+                        </td>
+                        <td>                                    
+                            Shameik Moore, Hailee Steinfeld, Oscar Isaac
+                        </td>
+                        <td>
+                            <div class="mt-rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </section>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>
